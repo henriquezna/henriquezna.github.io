@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card.astro';
+const pageTitle = "Nathan Henriquez";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Producer and Developer</h2>
+  <h3>Check Out My Work:</h3>
+  <div>
+    <Card url={"https://diablo4.blizzard.com/en-us/"} title={"Diablo IV"} image={"/src/images/diablo-iv.jpg"} content={"Animation - Technology"} />
+    <Card url={"/posts/GameJams"} title={"Game Jams"} image={"/src/images/ScreenShot00004.png"} content={"Designer, Artist, Developer"} />
+  </div>
+</BaseLayout>
+
+<style>
+  div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: center;
+      gap: 10px;
+
+      padding: 1rem 1rem;
+      color: maroon;
+      text-decoration: none;
+  }
+</style>
