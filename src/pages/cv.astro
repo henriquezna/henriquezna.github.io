@@ -1,37 +1,99 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/cv.css';
 const pageTitle = "CV";
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <h1>Nathan Henriquez</h1>
+    <h2>Skills</h2>
+    <ul>
+        <li>Game Production, Project Management</li>
+        <li>Multimedia Design, Development, Scripting</li>
+        <li>Product Development, Licensing, Digital Marketing</li>
+    </ul>
+    <h3>Project Management</h3>
+    <ul>
+        <li>Scheduling, Roadmap Planning, Budgeting</li>
+        <li>Stakeholder Communication, Team Collaboration</li>
+        <li><strong>Methodologies:</strong> Agile, Scrum, Kanban</li>
+        <li><strong>Project Tools:</strong> Jira, Confluence, ShotGrid</li>
+        <li><strong>Collaboration:</strong> Slack, Teams, Discord</li>
+        <li><strong>Communication:</strong> Microsoft Office, Excel, Powerpoint, Google Suite</li>
+    </ul>
+    <h3>Technology</h3>
+    <ul>
+        <li><strong>Game Engines:</strong> Unreal Engine & Blueprints</li>
+        <li><strong>Game Frameworks/Libraries:</strong> SDL2, Raylib, OpenGL, GLSL, Love2D</li>
+        <li><strong>Languages:</strong> C++, Lua</li>
+        <li><strong>Image Editing:</strong> Adobe Creative Suite, Photoshop, Illustrator</li>
+        <li><strong>3D Tools:</strong> Maya, Blender, ZBrush, Substance Tools</li>
+        <li><strong>Front End Web Development:</strong> HTML, CSS, JavaScript, WordPress</li>
+        <li><strong>Source Control:</strong> Git/Github</li>
+    </ul>
 
-    <h2>Bio</h2>
-    <p>I'm a Game Producer and Developer with over 5 years of media production 
-        experience. I have a backgound in animation, videography, and game development.</p>
+    <h2>Professional Experience</h2>
+    
+    <h3>Development Manager, Games- Funko</h3>
+    <ul>
+        <li>2024-2025</li>
+        <li>Managed the Funko Games brand; overseeing production, licensing, and marketing of board games </li>
+        <li>Led project management for licensed digital products including Funko Fusion. </li>
+        <li>Improved marketing strategy for Funko Games products through websites, social media, conventions, and retailers such as Amazon. </li>
+        <li>Assisted leadership and internal teams with line planning, contract negotiation, creative development, sourcing, and compliance. </li>
+        <li>Handled licensing approvals for studio partners including Disney, Lucasfilm, Warner Bros. Discovery, Paramount, and Hasbro. </li>
+        
+    </ul>
 
-    <h2>Experience</h2>
     <h3>Associate Producer - Blizzard Entertainment</h3>
     <ul>
-        <li>Animation Technology</li>
         <li>2022-2024</li>
+        <li>Led technical projects for animation pipelines and artist tools.</li>
+        <li>Managed 3 projects to deploy new digital content creation software. Coordinated the efforts of over 40 developers and artists to implement and test features.</li>
+        <li>Led a project to build tools for artist reviews. Gathered and prioritized  product backlog items from stakeholders. Coordinated development testing and regular releases to art pipelines.</li>
+        <li>Led a project to upgrade hardware and software for over 100 artists.</li>
+        <li>Improved ShotGrid administration tools to provide better billing and financial accountability for the studio.</li>
+        <li>Organized 2 Hackathons with over 40 participants working on studio relevant RnD projects.</li>
     </ul>
 
     <h3>Multimedia Specialist - DePaul University</h3>
     <ul>
-        <li>Center for Teaching and Learning</li>
         <li>2019-2021</li>
+        <li>Center for Teaching and Learning</li>
+        <li>Produced and edited learning media for 5 university courses.</li>
+        <li>Designed and produced art assets for an educational game improving learning outcomes for the university nursing program.</li>
+        <li>Assisted with transitioning the university to remote and hybrid learning: Including hiring over 20 new department members and providing technical support to instructors online and in person. </li>
     </ul>
 
     <h3>Videographer - Computer Training Institute of Chicago</h3>
     <ul>
-        <li>Internship</li>
         <li>2019-2020</li>
+        <li>Internship</li>
+        <li>Produced learning material for tech training courses.</li>
+        <li>Produced motion graphics for marketing campaigns</li>
     </ul>
 
     <h3>Production Assistant - GRTV & Grand Rapids Community Media Center</h3>
     <ul>
-        <li>Internship</li>
         <li>2018</li>
+        <li>Internship</li>
+        <li>Created a weekly TV Show aired on GRTV: The Weekly View. Produced 30 minutes of video and graphics content weekly.</li>
+        <li>Planned, set up, and supervised events for the community: Grand Rapids Festival of the Arts, Community Open Houses.</li>
+    </ul>
+
+    <h2>Projects & Credits</h2>
+    <h3>Video Games</h3>
+    <ul>
+        <li><strong><em>Funko Fusion:</em></strong> Funko Licensing, Asset Management, Project Management.</li>
+        <li><strong><em>Diablo IV:</em></strong> Animation Technology Production, In-game and pre-rendered cinematics.</li>
+        <li><strong><em>World of Warcraft: The War Within:</em></strong> Animation Technology Production, In-game and pre-rendered cinematics.</li>
+        <li><strong><em>Overwatch 2: Kiriko Cinematic:</em></strong> Animation Technology Production, Pre-rendered cinematic.</li>
+    </ul>
+    <h3>Board Games</h3>
+    <ul>
+        <li><strong><em>Cranium (Funko Games):</em></strong> Development Manager & Product Development Lead.</li>
+        <li><strong><em>Star Wars Rivals: Series 2:</em></strong> Development Manager & Product Development Lead.</li>
+        <li><strong><em>House of the Dragon: Dark Dealings:</em></strong> Development Manager & Product Development Lead.</li>
+        <li><strong><em>Scream the Game International Editions:</em></strong> Development Manager & Product Development Lead.</li>
+        <li><strong><em>Bitty Pop! Chase Game:</em></strong> Development Manager & Product Development Lead.</li>
     </ul>
 
     <h2>Certifications</h2>
@@ -43,7 +105,7 @@ const pageTitle = "CV";
 
     <h3>Google Project Management Professional Certificate</h3>
     <ul>
-        <li>Google/Coursera</li>
+        <li>Google</li>
         <li>Jan 2022</li>
     </ul>
 
@@ -52,45 +114,13 @@ const pageTitle = "CV";
     <ul>
         <li>M.A. in Animation</li>
         <li>2019-2021</li>
-        <li>Studied 3D game art and animation, visual storytelling, VFX</li>
+        <li>Studied 3D game art, animation, tech art, visual storytelling, VFX</li>
     </ul>
 
     <h3>Grand Valley State University</h3>
     <ul>
         <li>B.A. in Philosophy, Minor in Computer Science</li>
         <li>2015-2019</li>
-        <li>Studied the history of philosophy, phenomenolgy, logic, language, new media, data structures, and algorithms</li>
-    </ul>
-
-    <h2>Skills</h2>
-    <ul>
-        <li>Game Art, Scripting</li>
-        <li>Level Design</li>
-        <li>Game Production</li>
-    </ul>
-    <h3>Project Management</h3>
-    <ul>
-        <li>Project Management</li>
-        <li>Scheduling, Budgeting</li>
-        <li>Agile, Scrum, Waterfall, Kanban</li>
-        <li>Jira, Confluence, ShotGrid</li>
-        <li>Microsoft Office, Google Suite</li>
-    </ul>
-    <h3>Technology</h3>
-    <ul>
-        <li>Unreal Engine, Blueprints</li>
-        <li>C++, Python, Lua</li>
-        <li>Front End Web Development</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Adobe Creative Suite, Figma</li>
-        <li>3D Modeling, Texturing, Animation</li>
-        <li>Maya, ZBrush, Substance Tools</li>
-    </ul>
-
-    <h2>Credits</h2>
-    <ul>
-        <li>Diablo IV - In game and pre-rendered cinematics, Animation Technology</li>
-        <li>World of Warcraft: The War Within - In game and pre-rendered cinematics, Animation Technology</li>
-        <li>Overwatch 2: Kiriko - Pre-rendered cinematic, Animation Technology</li>
+        <li>Studied the history of philosophy, phenomenolgy, logic, language, new media, data structures and algorithms</li>
     </ul>
 </BaseLayout>

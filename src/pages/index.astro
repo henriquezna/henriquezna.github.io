@@ -1,15 +1,27 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
-const pageTitle = "Nathan Henriquez";
+const pageTitle = "About Me";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Producer and Developer</h2>
-  <h3>Check Out My Work:</h3>
-  <div>
-    <Card url={"https://diablo4.blizzard.com/en-us/"} title={"Diablo IV"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/diablo-iv.jpg"} content={"Animation - Technology"} />
-    <Card url={"/posts/GameJams"} title={"Game Jams"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/ScreenShot00004.png"} content={"Designer, Artist, Developer"} />
-  </div>
+  <h3>I'm a producer and project manager with experience across games, animation, and consumer products. I enjoy leading cross-discipline teams to create new experiences for fans. I excel at problem-solving and supporting teams with creative and innovative solutions.</h3>
+  <h3>In my spare time I enjoy hobby Game Development and studying Philosophy.</h3>
+    <h2>Projects & Credits</h2>
+    <h3>Video Games</h3>
+    <ul>
+        <li><strong><em>Diablo IV:</em></strong> Animation Technology Production, In-game and pre-rendered cinematics.</li>
+        <li><strong><em>World of Warcraft: The War Within:</em></strong> Animation Technology Production, In-game and pre-rendered cinematics.</li>
+        <li><strong><em>Overwatch 2: Kiriko Cinematic:</em></strong> Animation Technology Production, Pre-rendered cinematic.</li>
+        <li><strong><em>Funko Fusion:</em></strong> Funko Licensing, Asset Management, Project Management.</li>
+    </ul>
+    <h3>Board Games</h3>
+    <ul>
+        <li><strong><em>Cranium (Funko Games):</em></strong> Development Manager & Product Development Lead.</li>
+        <li><strong><em>Star Wars Rivals Series 2:</em></strong> Development Manager & Product Development Lead.</li>
+        <li><strong><em>House of the Dragon: Dark Dealings:</em></strong> Development Manager & Product Development Lead.</li>
+        <li><strong><em>Scream the Game International Editions:</em></strong> Development Manager & Product Development Lead.</li>
+        <li><strong><em>Bitty Pop! Chase Game:</em></strong> Development Manager & Product Development Lead.</li>
+    </ul>
 </BaseLayout>
 
 <style>
@@ -20,7 +32,6 @@ const pageTitle = "Nathan Henriquez";
       align-content: flex-start;
       justify-content: center;
       gap: 10px;
-
       padding: 1rem 1rem;
       color: maroon;
       text-decoration: none;

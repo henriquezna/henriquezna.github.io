@@ -1,35 +1,115 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
-import '../styles/projects.css';
+import '../styles/global.css';
 const pageTitle = "Projects";
 ---
 <BaseLayout pageTitle={pageTitle}>
     <div>
-        <Card url={"https://www.youtube.com/watch?v=o03STclgxSc"} title={"WoW: The War Within"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/320a621f28f9c3fe0d9bbf3ec9a883e69eed0721/images/wow.jpg"} content={"Animation - Technology"} />
-        <Card url={"https://diablo4.blizzard.com/en-us/"} title={"Diablo IV"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/diablo-iv.jpg"} content={"Animation - Technology"} />
-        <Card url={"https://www.youtube.com/watch?v=9acxn7qAST4"} title={"Overwatch 2: Kiriko"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/kiriko.jpg"} content={"Animation - Technology"} />
+        <h2>Professional</h2>
+        <Card url={"https://www.youtube.com/watch?v=o03STclgxSc"} 
+            title={"World of Warcraft: The War Within"} 
+            image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/320a621f28f9c3fe0d9bbf3ec9a883e69eed0721/images/wow.jpg"} 
+            role={"Animation Technology Production"} 
+            content={"Managed 3 projects to deploy new digital content creation software."} 
+            content2={"Coordinated the efforts of over 40 developers and artists to implement and test features."} 
+            content3={"Technology: Jira, Confluence, ShotGrid."} 
+        />
 
-        <Card url={"/posts/GameJams"} title={"Seashell Jam"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/ScreenShot00004.png"} content={"Designer, 3D Artist"} />
-        <Card url={"https://asfunasfun.itch.io/squashbuckler"} title={"Squashbuckler"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/squashbuckler.png"} content={"Visual Artist"} />
-        <Card url={"https://henriquezna.itch.io/ninja-castle"} title={"Ninja Castle"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/ninjacastle.png"} content={"Designer, Developer"} />
+        <Card url={"https://diablo4.blizzard.com/en-us/"} 
+            title={"Diablo IV"} 
+            image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/diablo-iv.jpg"} 
+            role={"Animation Technology Production"}
+            content={" Led a project to build tools for artist reviews. Gathered and prioritized product backlog items from stakeholders."} 
+            content2={"Coordinated development testing and regular releases to art pipelines."} 
+            content3={"Technology: Jira, Confluence, ShotGrid."}
+        />
 
-        <Card url={"https://vimeo.com/699689682?share=copy"} title={"Late For Work"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/lateforwork.png"} content={"Director, Artist"} />
-        <Card url={"https://www.artstation.com/henriquezna"} title={"Environment Art"} image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/henriquez-castleruinsunity.jpg"} content={"Art Station"} />
+        <Card url={"https://www.youtube.com/watch?v=9acxn7qAST4"} 
+            title={"Overwatch 2: Kiriko"} 
+            image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/kiriko.jpg"} 
+            role={"Animation Technology Production"}
+            content={"Led a project to upgrade hardware and software for over 100 artists."} 
+            content2={" Improved ShotGrid administration tools to provide better billing and financial accountability for the studio."} 
+            content3={"Technology: Jira, Confluence, ShotGrid."}
+        />
+
+        <Card url={"https://www.funkofusion.com/"} 
+            title={"Funko Fusion"} 
+            image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/funko-fusion.jpg"} 
+            role={"Development Manager, Funko Licensing"}
+            content={"Handled asset management between Funko and 1010 Games."} 
+            content2={"Coordinated projects between 1010 Games Production team and internal Funko teams."} 
+            content3={"Assisted with outbound licensing and marketing."}
+        />
+        
+        <h2>Game Jams</h2>
+        
+        <Card url={"/posts/GameJams"} 
+            title={"Seashell Jam"} 
+            image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/ScreenShot00004.png"} 
+            role={"Level Designer, 3D Artist"}
+            content={"Designed three prtotype levels from conception to implementation and environment art."} 
+            content2={"Used procedural generation plugin to add PCG content to levels."} 
+            content3={"Technology: Unreal Engine, C++, Blender."}
+        />
+        
+        <Card url={"https://asfunasfun.itch.io/squashbuckler"} 
+            title={"Squashbuckler"} 
+            image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/squashbuckler.png"} 
+            role={"Visual Artist"}
+            content={"Designed and modeled characters and props."} 
+            content2={"Textured and created materials in engine."} 
+            content3={"Technology: Maya, Photoshop."}
+        />
+        
+        <Card url={"https://henriquezna.itch.io/ninja-castle"} 
+            title={"Ninja Castle"} 
+            image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/ninjacastle.png"} 
+            role={"Designer, Developer"}
+            content={"Designed gameplay."} 
+            content2={"Programmed gameplay."} 
+            content3={"Technology: Pico-8, Lua."}
+        />
+        
+        <h2>Student</h2>
+        
+        <Card url={"https://vimeo.com/699689682?share=copy"} 
+        title={"Late For Work"} 
+        image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/lateforwork.png"} 
+        role={"Director, Artist"}
+        content={"Wrote and created storyboards and animatic for the short."} 
+        content2={"Modeled, Rigged, and Animated the short."} 
+        content3={"Technology: Maya."}
+        />
+        
+        <Card url={"https://www.artstation.com/henriquezna"} 
+        title={"Environment Art"} 
+        image={"https://raw.githubusercontent.com/henriquezna/henriquezna.github.io/main/images/henriquez-castleruinsunity.jpg"} 
+        role={"Art Station"}
+        content={"Modeled and textured art assets."} 
+        content2={"Assembled materials and assets in engine."} 
+        content3={"Technology: Maya, Substance Painter, Substance Designer, Unity, Unreal."}
+        />
+
     </div>
 </BaseLayout>
 
 <style>
+    html {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 90%, rgba(71, 119, 183, 1) 100%);
+    }
     div {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-content: flex-start;
         justify-content: center;
         gap: 10px;
-
-        padding: 1rem 1rem;
-        color: maroon;
         text-decoration: none;
+    }
+    h2 {
+        font-size: 1.80rem;
+        margin: 0%;
     }
 </style>

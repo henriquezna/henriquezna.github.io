@@ -1,0 +1,21 @@
+html {
+    /*background-color: rgba(240, 240, 240, 255);*/
+    background: linear-gradient(0deg, rgb(240, 240, 240) 90%, rgba(71, 119, 183, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 250)
+  }
+  
+  body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.0;
+  }
+
+  h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }

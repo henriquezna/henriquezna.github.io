@@ -1,13 +1,19 @@
 ---
-const { url, platform } = Astro.props;
+const { url, platform, icon } = Astro.props;
 ---
-<a href={url}>{platform}</a>
+<a href={url}>
+  <img src={icon}>
+  {platform}
+</a>
 
 <style>
     a {
       padding: 1rem 1rem;
       color: white;
-      background-color: #402a61;
+      background-color: rgb(32, 75, 145);
       text-decoration: none;
+    }
+    img {
+      width: 20px;
     }
 </style>

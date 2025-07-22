@@ -1,37 +1,59 @@
 ---
-const { title, url, image, content } = Astro.props
+const { title, url, image, role, content, content2, content3 } = Astro.props
 ---
-<div>
-    <li class="blog-list">
-        <a class="blog-links" href={url}>
-            {title}
-            <img src={image}>
-            <p>{content}</p>
-        </a>
-    </li>
-    
-    
+<div class="card">
+    <h2>{title}</h2>
+    <div class="row">
+        <div class="column-left">    
+            <a class="blog-links" href={url}>
+                <img src={image}>
+            </a>
+        </div>
+        <div class="column-right">
+            <p>{role}</p>
+            <ul>
+                <li>{content}</li>
+                <li>{content2}</li>
+                <li>{content3}</li>
+            </ul>
+        </div>
+    </div>
 </div>
+
 <style>
-    div {
-        width: 300px;
-        height: 200px;
-        background-color: rgb(31, 26, 100);
+    .row {
+        display: flex;
+    }
+    .column-left {
+        width: 50%;
+    }
+    .column-right {
+        width: 50%;
+        padding-left: 1rem;
+    }
+    .card {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(32, 75, 145, 0.25);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0px;
-        align-content: center;
-        justify-content: center;
+        align-content:flex-start;
+        justify-content:left;
         padding: 1rem;
-        border-radius: 15px;
+        border-radius: 5px;
     }
     img {
-        max-width: 250px;
-        max-height: 150px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    h2 {
+        font-size: 1.80rem;
+        margin: 0%;
     }
     p {
-        font-size: 1rem;
+        font-size: 1.25rem;
         padding: 0%;
         margin: 0%;
     }
@@ -47,8 +69,8 @@ const { title, url, image, content } = Astro.props
         align-content: center;
         justify-content: center;
     }
-    div:hover {
+    img:hover {
         text-decoration: none;
-        background: #fe9546;
+        background: #100242;
     }
 </style>

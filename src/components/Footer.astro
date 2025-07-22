@@ -6,14 +6,15 @@ import Social from './Social.astro'
 <style>
     footer {
       display: flex;
-      gap: 1rem;
       margin-top: 2rem;
     }
 </style>
 
 <footer>
-  <Social platform="LinkedIn" url="https://www.linkedin.com/in/nathan-henriquez/" />
-  <Social platform="GitHub" url="https://github.com/henriquezna" />
-  <Social platform="Artstation" url="https://henriquezna.artstation.com/" />
-  <Social platform="Itch.io" url="https://henriquezna.itch.io/" />
+  <div class="nav-links">
+    <Social platform="LinkedIn" url="https://www.linkedin.com/in/nathan-henriquez/" icon="../images/linkedin_icon.png" />
+    <Social platform="GitHub" url="https://github.com/henriquezna" icon="../images/github_icon.png" />
+    <Social platform="Artstation" url="https://henriquezna.artstation.com/" icon="../images/artstation_icon.png" />
+    <Social platform="Itch.io" url="https://henriquezna.itch.io/" icon="../images/itch_io_icon.png" />
+  </div>
 </footer>
